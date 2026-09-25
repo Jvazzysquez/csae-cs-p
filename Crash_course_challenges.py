@@ -67,3 +67,10 @@ print(f"Hello, my name is {first} {last} from {school}")
 #CHAL:10
 start = 10
 print()
+
+#COMPCHAL:1
+import random
+print("Welcome to the Game Show!\n\nYour first question...")
+q=["The only U.S. president to serve more than two terms in office., The day after Christmas, celebrated in the UK and other Commonwealth countries., The largest and deepest of Earth's oceanic divisions., Makes up about 78% of Earth's atmosphere, forming the vast majority of the air we breathe., ]
+answer:Franklin D. Rosevelt, Boxing day, The pacific ocean, Nitrogen, 
+1=input(random.sample(q, k=5))
