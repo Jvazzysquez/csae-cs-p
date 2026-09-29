@@ -64,13 +64,16 @@ last = "Lovelace"
 school = "CSAEA"
 print(f"Hello, my name is {first} {last} from {school}")
 
-#CHAL:10
-start = 10
-print()
+#CHAL:9
+number = 7
+for i in range(1, 11):
+    print(f"{number}x{i}={number*i}")
 
-#COMPCHAL:1
-import random
-print("Welcome to the Game Show!\n\nYour first question...")
-q=["The only U.S. president to serve more than two terms in office., The day after Christmas, celebrated in the UK and other Commonwealth countries., The largest and deepest of Earth's oceanic divisions., Makes up about 78% of Earth's atmosphere, forming the vast majority of the air we breathe., ]
-answer:Franklin D. Rosevelt, Boxing day, The pacific ocean, Nitrogen, 
-1=input(random.sample(q, k=5))
+#CHAL10
+year = 1900
+if (year%4==0 and year%100!=0):
+    print("It is a leap year")
+elif (year % 400 == 0):
+    print("It is a leap year")
+else:
+    print("It is not a leap year")
