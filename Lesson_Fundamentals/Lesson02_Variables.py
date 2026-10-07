@@ -46,7 +46,10 @@ print(count)
 x = "Radia Perlman"
 y = 34
 z = "Networking Engineer"
-
+name=x
+age=y
+job=z
+print(name, age, job)
 # Challenge 2: Update Variables  
 # Create a variable called 'count' with a value of 10.  
 # Use another variable to increase 'count' by 5
