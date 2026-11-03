@@ -100,15 +100,18 @@ def multer(a, b):
 def divor(a, b):
     return a/b
 op=input("+, *, -, or /? ")
+a=int(input("Number 1: "))
+b=int(input("Number 2: "))
 if op == "+":
-    print(adder)
+    print(adder(a, b))
 elif op == "-":
-    print(subber)
+    print(subber(a, b))
 elif op == "/":
-    print(divor)
+    print(divor(a, b))
 elif op == "*":
-    print(multer)
+    print(multer(a, b))
 else:
+    print("Invalid opperation")
 # Challenge 2
 # Make a function called 'average' that:
 # 1) accepts five numbers
@@ -116,14 +119,24 @@ else:
 # 3) print the returned value outside the function
 def average(a, b, c, d, e):
     return (a+b+c+d+e)/5
-
+a=int(input("Number: "))
+b=int(input("Number: "))
+c=int(input("Number: "))
+d=int(input("Number: "))
+e=int(input("Number: "))
+print(f"The average of the numbers is {average(a, b, c, d, e)}")
 # Challenge 3
 # Make a function called is_even that:
 # 1) accepts one number
 # 2) prints "Even" if the number is even
 # 3) prints "Odd" if the number is odd
-
-
+def is_even(a):
+    if a%2==0:
+        return "Even"
+    else:
+        return "Odd"
+a=int(input("Choose a number: "))
+print(f"It is {is_even(a)}")
 # Challenge 4
 # Use the pseudocode below to write code:
 # Make a function called "analyze_word" that counts how many vowels and consonants are in a word
@@ -141,3 +154,6 @@ def average(a, b, c, d, e):
 # 	return a f-string that states how many vowels and how many consonants are in the word.
 
 # Call the function with a sample one-word string and print the returned result outside the function
+
+vow=0
+con=0
