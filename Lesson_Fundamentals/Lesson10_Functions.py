@@ -155,5 +155,18 @@ print(f"It is {is_even(a)}")
 
 # Call the function with a sample one-word string and print the returned result outside the function
 
-vow=0
-con=0
+
+def analyze_word(word):
+  con=0
+  vow=0
+  for let in word:
+    if let in "bcdfghjklmnpqrstvwxyz":
+      con+=1
+    elif let in "aeiou":
+      vow+=1
+    else:
+      print("Error with letter", let)
+  return con, vow
+word=input("What is your word? ")
+word=word.lower()
+print(f"There is {analyze_word(word)} consonants and vowels.")
