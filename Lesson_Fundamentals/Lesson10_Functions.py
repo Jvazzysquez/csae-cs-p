@@ -99,12 +99,23 @@ def multer(a, b):
     return a*b
 def divor(a, b):
     return a/b
-
+op=input("+, *, -, or /? ")
+if op == "+":
+    print(adder)
+elif op == "-":
+    print(subber)
+elif op == "/":
+    print(divor)
+elif op == "*":
+    print(multer)
+else:
 # Challenge 2
 # Make a function called 'average' that:
 # 1) accepts five numbers
 # 2) returns the average
 # 3) print the returned value outside the function
+def average(a, b, c, d, e):
+    return (a+b+c+d+e)/5
 
 # Challenge 3
 # Make a function called is_even that:
