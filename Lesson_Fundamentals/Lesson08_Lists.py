@@ -61,6 +61,12 @@ print(list)
 # Finally, print the final shopping list.
 shopping=[]
 shopping.append("Bananas")
+shopping.append("Cats")
+shopping.append("Dad")
+shopping.insert(2, "Elephants")
+shopping.remove("Cats")
+print(shopping)
+
 
 nums = [3, 7, 1, 9, 4, 2, 5, 8, 6, 0]
 print("Numbers:", nums)
@@ -89,3 +95,8 @@ else:
 
 # Create a list of five floats called measurements.
 # Print the length, minimum, maximum, and sum of the list using built-in functions.
+list=[4.9, 5.6, 3.3, 2.8, 1.6]
+print("Length: ", len(list))
+print("Minimun: ", min(list))
+print("Maximum: ", max(list))
+print("Sum: ", sum(list))
